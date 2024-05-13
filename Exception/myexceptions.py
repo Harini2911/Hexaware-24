@@ -20,3 +20,9 @@ class InsufficientStockException(Exception):
     def __init__(self,msg="insufficient stock quantity"):
         self.msg = msg
         super().__init__(self.msg)
+
+
+class InvalidDataException(Exception):
+    def __init__(self,msg="invalid choice"):
+        self.msg = msg
+        super().__init__(self.msg)
